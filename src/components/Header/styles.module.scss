@@ -1,0 +1,16 @@
+@use "../../styles/functions" as f;
+@import "../../styles/variables";
+
+.container {
+  .title {
+    color: $color-light;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+
+  &:global(.ant-layout-header) {
+    background-color: $color-dark;
+    padding: 0 f.rem(30px);
+  }
+}

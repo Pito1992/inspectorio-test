@@ -1,0 +1,5 @@
+@use "../../styles/functions" as f;
+
+.container:global(.ant-layout-content) {
+  padding: f.rem(12px) f.rem(16px);
+}

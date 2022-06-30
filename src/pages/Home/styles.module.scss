@@ -1,0 +1,18 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.container {
+  
+}
+.container {
+
+  .userList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1px;
+  
+    :global(.ant-btn) {
+      margin: 3px 2px;
+    }
+  }
+}

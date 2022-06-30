@@ -1,0 +1,28 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.container {
+  .userProfile {
+    :global {
+      .ant-list-item-meta-title {
+        margin-bottom: 0;
+      }
+      .ant-list-item-meta-description {
+        font-size: f.rem(12px);
+      }
+      .ant-list-item {
+        position: relative;
+        border-bottom: 0 !important;
+      }
+      .ant-list-item-meta-content:before {
+        content: '';
+        display: block;
+        left: f.rem(56px);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        border-bottom: 1px solid $color-border;
+      }
+    }
+  }
+}

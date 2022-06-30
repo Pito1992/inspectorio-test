@@ -1,0 +1,22 @@
+@use "../../styles/functions" as f;
+@import "../../styles/variables";
+
+.backButton {
+  display: flex;
+  align-items: center;
+  font-size: f.rem(18px);
+  cursor: pointer;
+
+  :global {
+    .anticon, .ant-typography {
+      color: $color-light;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  left: f.rem(-20px);
+  top: 50%;
+  transform: translateY(-50%) scale(1.2);
+}
